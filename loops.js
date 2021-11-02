@@ -22,7 +22,7 @@ while (x <= 20) {
     // increment x
 }*/
 
-var num = 99;
+/*var num = 99;
 
 while (num > 0) {
     if (num > 2) {
@@ -37,4 +37,25 @@ while (num > 0) {
     // print lyrics using num
     // don't forget to check pluralization on the last line!
     // decrement num
+}*/
+
+let second = 60
+
+while (second >= 0) {
+    if (second === 50) {
+        console.log("Orbiter transfers from ground to internal power");
+    } else if (second === 31) {
+        console.log("Ground launch sequencer is go for auto sequence start");
+    } else if (second === 16) {
+        console.log("Activate launch pad sound suppression system");
+    } else if (second === 10) {
+        console.log("Activate main engine hydrogen burnoff system");
+    } else if (second === 6) {
+        console.log("Main engine start");
+    } else if (second === 0) {
+        console.log("Solid rocket booster ignition and liftoff!");
+    } else {
+        console.log("T-" + second + " seconds");
+    }
+    second = second - 1;
 }
