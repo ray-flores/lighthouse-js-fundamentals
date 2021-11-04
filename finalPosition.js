@@ -2,9 +2,6 @@
 
 const moves = ['north', 'north', 'west', 'west', 'north', 'east','north']  
 
-
-
-
 function finalPosition (moves) {
   let x = 0;
   let y = 0;
@@ -15,9 +12,12 @@ function finalPosition (moves) {
       x -= 1;
     } else if (move === 'north') {
       y += 1;
+    } else if (move === 'south') {
+      y -= 1;
     }
-  }  
-return position = [x, y];
+  }
+  let position = [x, y];
+  return position;
 }
 
 console.log(finalPosition(moves));
